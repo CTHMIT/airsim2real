@@ -1,0 +1,23 @@
+[project]
+name = "airsim2real"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "CTHMIT", email = "chuntsehsu@gmail.com"},
+]
+dependencies = [
+    "pydantic>=2.11.4", 
+    "opencv-contrib-python>=4.11.0.86", 
+    "numpy>=2.2.5", 
+    "mavsdk>=3.0.1", 
+    "rpc-msgpack>=0.6", 
+    "cosysairsim>=3.3.0", 
+    "pyyaml>=6.0.2"
+]
+requires-python = "==3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false

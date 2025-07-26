@@ -1,0 +1,121 @@
+{
+    "SeeDocsAt": "https://cosys-lab.github.io/settings/",
+    "SettingsVersion": 2.0,
+    "EngineSound": false,
+    "ClockSpeed": 1.0,
+    "ClockType": "SteppableClock", 
+    "SimMode": "Multirotor",
+    "PhysicsEngineSetting": {
+        "MinimumStepSize": 0.001,  
+        "SubSteps": 10,           
+        "SyncMode": true,         
+        "PhysicsSolverIterations": 16
+    },
+    "LocalHostIp": "0.0.0.0",
+    "ApiServerPort": 41451,
+    "RpcEnabled": true,
+    "Vehicles": {
+        "PX4": {
+            "VehicleType": "PX4Multirotor",
+            "UseSerial": false,
+            "UseTcp": true,
+            "TcpPort": 4560,
+            "UdpPort": 14570,
+            "ControlPortLocal": 14540,
+            "ControlPortRemote": 14580,
+            "QgcPort": 18570,
+            "LockStep": true,
+            "LocalHostIp": "0.0.0.0",
+            "AutoCreate": true,
+            "Sensors": {
+                "Imu": { 
+                    "SensorType": 2, 
+                    "Enabled": true,
+                    "GenerateNoise": true,
+                    "AngularRandomWalk": 0.02,               
+                    "GyroBiasStabilityTau": 1000,            
+                    "GyroBiasStability": 0.01,               
+                    "VelocityRandomWalk": 0.1,               
+                    "AccelBiasStabilityTau": 1000,           
+                    "AccelBiasStability": 0.2              
+                }
+            },
+            "Parameters": {
+                "NAV_RCL_ACT": 0,
+                "NAV_DLL_ACT": 0,
+                "COM_OBL_ACT": 1,
+                "LPE_LAT": 47.641468,
+                "LPE_LON": -122.140165
+            },
+            "Cameras": {
+                "front_center": {
+                    "CaptureSettings": [
+                        {
+                            "ImageType": 0,
+                            "Width": 320,
+                            "Height": 240,
+                            "FOV_Degrees": 90,
+                            "CaptureInterval": 0.033
+
+                        }
+                    ],
+                    "X": 1.0, "Y": 0, "Z": -0.1,
+                    "Pitch": 0, "Roll": 0, "Yaw": 0
+                },
+                "side_left": {
+                    "CaptureSettings": [
+                        {
+                            "ImageType": 0,
+                            "Width": 320,
+                            "Height": 240,
+                            "FOV_Degrees": 90,
+                            "AutoExposureSpeed": 100,
+                            "AutoExposureBias": 0,
+                            "AutoExposureMaxBrightness": 0.64,
+                            "AutoExposureMinBrightness": 0.03,
+                            "MotionBlurAmount": 0,
+                            "TargetGamma": 1.0,
+                            "CaptureInterval": 0.033
+                        }
+                    ],
+                    "X": 1.0, "Y": 0.5, "Z": -0.1,
+                    "Pitch": 0, "Roll": 0, "Yaw": 0
+                },
+                "side_right": {
+                    "CaptureSettings": [
+                        {
+                            "ImageType": 0,
+                            "Width": 320,
+                            "Height": 240,
+                            "FOV_Degrees": 90,
+                            "AutoExposureSpeed": 100,
+                            "AutoExposureBias": 0,
+                            "AutoExposureMaxBrightness": 0.64,
+                            "AutoExposureMinBrightness": 0.03,
+                            "MotionBlurAmount": 0,
+                            "TargetGamma": 1.0,
+                            "CaptureInterval": 0.033
+                        }
+                    ],
+                    "X": 1.0, "Y": -0.5, "Z": -0.1,
+                    "Pitch": 0, "Roll": 0, "Yaw": 0
+                }
+            }
+        }
+    },
+    "SubWindows": [],
+    "NoDisplay": true,
+    "UseBlockingConnection": false,
+    "ViewMode": "",
+    "OriginGeopoint": {
+        "Latitude": 47.641468,
+        "Longitude": -122.140165,
+        "Altitude": 122
+    },
+    "Wind": {
+        "X": 0, "Y": 0, "Z": 0
+    },
+    "TimeOfDay": {
+        "Enabled": false
+    }
+}
